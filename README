@@ -1,0 +1,5 @@
+	This is a postfix(Reverse polish) polynomial calculator.  Its purpose is to add, subtract, muliply and
+	divide polynomials.  It works in both postfix and infix notation.  For postfix, simply put spaces between
+	the terms, while for infix, put no spaces in.  It will simplify the polynomial after the evaluation and 
+	give an answer.  
+	
