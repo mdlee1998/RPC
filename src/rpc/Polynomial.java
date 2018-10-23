@@ -1,7 +1,6 @@
 package rpc;
 
 import java.util.ListIterator;
-import java.util.Scanner;
 import java.util.Stack;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -15,14 +14,12 @@ import java.util.LinkedList;
 public class Polynomial{
 	//List of the terms
 	private LinkedList<Term> theList = new LinkedList<Term>();
-	private int size;
 
 	/**
 	 * Creates a new polynomial object, with an empty linked list
 	 */
 	public Polynomial() {
 		theList = new LinkedList<Term>();
-		size = 0;
 	}
 	public void setList(LinkedList<Term> list) {
 		theList = list;
@@ -58,13 +55,11 @@ public class Polynomial{
 			else if(thisTerm.getExp()<newTerm.getExp()) {
 				iter.previous();
 				iter.add(newTerm);
-				size++;
 				return;
 			}
 			
 		}
 		iter.add(newTerm);
-		size++;
 	}
 	
 	/**
